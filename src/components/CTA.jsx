@@ -17,9 +17,9 @@ export default function Example() {
     window.addEventListener('scroll', listenToScroll);
   });
   return (
-    <div className=' px-20 py-[11.25%] bg-gradient-to-br from-[#88f27e] via-[#8ccb86] to-[#a0e19a] '>
+    <div className=' lg:px-20 px-4 py-[11.25%] bg-gradient-to-br from-[#88f27e] via-[#8ccb86] to-[#a0e19a] '>
       <div className='flex justify-between max-w-6xl mx-auto'>
-        <div className='w-[55%]'>
+        <div className='lg:w-[55%]'>
           <h4 className='mb-5 font-extrabold text-[36px] leading-[39px] text-white '>
             We are bridging the financial inclusion gap
           </h4>
@@ -35,14 +35,14 @@ export default function Example() {
 
         <Transition.Root
           show={move}
-          enter='transition transform duration-[1000ms]'
+          enter='transition transform duration-[2000ms]'
           enterFrom='translate-x-full opacity-0'
           enterTo='translate-x-0 opacity-1'
         >
           <img
             src='./img/atm.png'
             alt='atm-card'
-            className='w-[390px] h-[240px] '
+            className='w-[390px] h-[240px] hidden lg:block'
           />
         </Transition.Root>
       </div>

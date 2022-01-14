@@ -88,16 +88,16 @@ export default function Features() {
           </p>
         </div>
 
-        <div className='relative mt-12 lg:mt-24 lg:flex lg:justify-center lg: lg:items-center'>
+        <div className='relative mt-12 lg:mt-10 lg:flex lg:justify-center lg: lg:items-center'>
           <div
-            className='hidden mt-10 -ml-12 mr-16 relative lg:mt-0 w-1/2 lg:block'
+            className='hidden mt-1 -ml-12 mr-16 relative lg:mt-0 w-1/2 lg:block'
             aria-hidden='true'
           >
             <Transition.Root
               // appear={true}
               show={move}
-              enter='transition transform duration-[1000ms]'
-              enterFrom='-translate-x-full opacity-0'
+              enter='transition transform duration-[2000ms]'
+              enterFrom='-translate-x-12 opacity-0'
               enterTo='translation-x-0 opacity-1'
             >
               <img
@@ -111,11 +111,11 @@ export default function Features() {
             </Transition.Root>
           </div>
 
-          <div className='w-full mx-auto relative lg:w-1/2'>
-            <h3 className='text-[22px] font-extrabold text-[#11324d] leading-[25px] tracking-tight'>
+          <div className='pr-10 w-full mx-auto relative lg:w-1/2'>
+            <h3 className='text-[22px] font-extrabold text-[#11324d] leading-[25px] tracking-tight  '>
               Thrift/Cooperative Service
             </h3>
-            <p className='text-justify text-[16px] text-black font-[400px] mt-[7px]'>
+            <p className=' text-left text-[16px] text-black font-[400px] mt-[7px] w-[70%] '>
               Use Tmoni's Cooperative service to save and earn commissions.
               There’s more - earn more when people save through you!
             </p>
@@ -131,12 +131,12 @@ export default function Features() {
           </div>
         </div>
 
-        <div className='relative mt-12 lg:mt-24 lg:flex lg:justify-center lg: lg:items-center'>
-          <div className='w-full mx-auto relative lg:w-1/2'>
+        <div className='relative mt-12 lg:mt-10 lg:flex lg:justify-center lg: lg:items-center'>
+          <div className='pl-10 ml-10 w-full mx-auto relative lg:w-1/2'>
             <h3 className='text-[22px] font-extrabold text-[#11324d] leading-[25px] tracking-tight'>
               Value Added Services
             </h3>
-            <p className=' text-justify text-[16px] text-black font-[400px] mt-[7px]'>
+            <p className=' text-justify text-[16px] text-black font-[400px] mt-[7px] w-[70%]'>
               Power up your account with commissions earned when you use our
               value added services. Start recharging!
             </p>
@@ -145,7 +145,7 @@ export default function Features() {
               className='flex items-center cursor-pointer mt-5 group '
             >
               <ChevronRightIcon className='h-[40px] w-[40px] p-0 rounded-[20px] bg-[#f78812] border-none text-white mr-[15px] group-hover:bg-[#11324d] ' />
-              <p className='text-[14px] font-black leading-[22px] text-[#f78812] group-hover:text-[#11324d] '>
+              <p className='text-[14px] font-black leading-[22px] text-[#f78812] group-hover:text-[#11324d]  '>
                 Learn More About Cooperative
               </p>
             </Link>
@@ -158,8 +158,8 @@ export default function Features() {
             <Transition.Root
               // appear={move}
               show={move2}
-              enter='transition transform duration-[1000ms]'
-              enterFrom='translate-x-full opacity-0'
+              enter='transition transform duration-[2000ms]'
+              enterFrom='translate-x-10 opacity-0'
               enterTo='translation-x-0 opacity-1'
             >
               <img
@@ -173,16 +173,16 @@ export default function Features() {
             </Transition.Root>
           </div>
         </div>
-        <div className='relative mt-12 lg:mt-24 lg:flex lg:justify-center lg: lg:items-center'>
+        <div className='relative mt-12 lg:mt-10 lg:flex lg:justify-center lg: lg:items-center'>
           <div
-            className='hidden mt-10 -ml-16 mr-24 relative lg:mt-0 w-1/2 lg:block mb-10'
+            className='hidden mt-1 -ml-16 mr-24 relative lg:mt-0 w-1/2 lg:block mb-10'
             aria-hidden='true'
           >
             <Transition.Root
               // appear={move}
               show={move3}
-              enter='transition transform duration-[1000ms]'
-              enterFrom='-translate-x-full opacity-0'
+              enter='transition transform duration-[2000ms]'
+              enterFrom='-translate-x-12 opacity-0'
               enterTo='translation-x-0 opacity-1'
             >
               <img
@@ -200,7 +200,7 @@ export default function Features() {
             <h3 className='text-[22px] font-extrabold text-[#11324d] leading-[25px] tracking-tight'>
               POS Management
             </h3>
-            <p className='text-justify text-[16px] text-black font-[400px] mt-[7px]'>
+            <p className='text-justify text-[16px] text-black font-[400px] mt-[7px] w-[70%]'>
               Use Tmoni's Cooperative service to save and earn commissions.
               There’s more - earn more when people save through you!
             </p>
