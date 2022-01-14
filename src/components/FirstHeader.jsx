@@ -118,7 +118,7 @@ export default function FirstHeader() {
                 <div className='h-16 flex items-center justify-between'>
                   {/* Logo (lg+) */}
                   <div className='hidden lg:flex-1 lg:flex lg:items-center'>
-                    <Link to='#'>
+                    <Link to='/'>
                       <span className='sr-only'>Workflow</span>
                       <img
                         className='h-8 w-auto'
@@ -131,7 +131,7 @@ export default function FirstHeader() {
                   {/* Mobile menu and search (lg-) */}
 
                   {/* Logo (lg-) */}
-                  <Link to='#' className='lg:hidden'>
+                  <Link to='/' className='lg:hidden'>
                     <span className='sr-only'>Workflow</span>
                     <img src='./img/TMoni.png' alt='' className='h-8 w-auto' />
                   </Link>

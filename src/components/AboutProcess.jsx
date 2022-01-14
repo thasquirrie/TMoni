@@ -47,7 +47,7 @@ export default function Example() {
   const [active, setActive] = useState(false);
 
   const listenToScroll = () => {
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
     const move = window.scrollY > 1600 ? true : false;
     setActive(move);
   };

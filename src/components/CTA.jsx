@@ -7,7 +7,8 @@ export default function Example() {
   const [move, setMove] = useState(false);
 
   const listenToScroll = () => {
-    const active = window.scrollY > 1867 ? true : false;
+    console.log(window.scrollY);
+    const active = window.scrollY > 1600 ? true : false;
 
     setMove(active);
   };
@@ -16,7 +17,7 @@ export default function Example() {
     window.addEventListener('scroll', listenToScroll);
   });
   return (
-    <div className=' lg:px-20 px-4 py-[11.25%] bg-gradient-to-br from-[#88f27e] via-[#8ccb86] to-[#a0e19a] '>
+    <div className=' lg:px-20 px-4 py-[4.25%] bg-gradient-to-br from-[#88f27e] via-[#8ccb86] to-[#a0e19a] '>
       <div className='flex justify-between max-w-6xl mx-auto'>
         <div className='lg:w-[55%]'>
           <h4 className='mb-5 font-extrabold text-[36px] leading-[39px] text-white '>

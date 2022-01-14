@@ -8,17 +8,21 @@ export default function Features() {
   const [move, setMove] = useState(false);
   const [move2, setMove2] = useState(false);
   const [move3, setMove3] = useState(false);
+
   const listenToScroll = () => {
-    let active = window.scrollY > 500 ? true : false;
+    // console.log(window.scrollY);
+    let active = window.scrollY > 488 ? true : false;
     setMove(active);
   };
   const listenToScroll2 = () => {
-    let active = window.scrollY > 960 ? true : false;
+    // console.log(window.scrollY);
+    let active = window.scrollY > 750 ? true : false;
     setMove2(active);
   };
 
   const listenToScroll3 = () => {
-    let active = window.scrollY > 1553 ? true : false;
+    // console.log(window.scrollY);
+    let active = window.scrollY > 1300 ? true : false;
     setMove3(active);
   };
 
@@ -29,19 +33,9 @@ export default function Features() {
   });
 
   return (
-    <div className='py-16  overflow-hidden lg:py-24'>
+    <div className='py-8  overflow-hidden lg:py-2'>
       <div className='relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl'>
-        <div className='relative'>
-          <h2 className='text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl'>
-            A better way to send money
-          </h2>
-          <p className='mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            magnam voluptatum cupiditate veritatis in, accusamus quisquam.
-          </p>
-        </div>
-
-        <div className='relative mt-12 lg:mt-10 lg:flex lg:justify-center lg: lg:items-center'>
+        <div className='relative mt-12 lg:mt-0 lg:flex lg:justify-center lg: lg:items-center min-h-[429px]'>
           <div
             className='hidden mt-1 -ml-12 mr-16 relative lg:mt-0 w-1/2 lg:block'
             aria-hidden='true'
@@ -54,7 +48,7 @@ export default function Features() {
               enterTo='translation-x-0 opacity-1'
             >
               <img
-                className=' relative mx-auto max-w-[390px] h-[429px]'
+                className=' relative mx-auto max-w-[390px] h-[429px] '
                 // width={490}
                 // src='https://tailwindui.com/img/features/feature-example-1.png'
                 src='./img/services-1.png'
@@ -84,7 +78,7 @@ export default function Features() {
           </div>
         </div>
 
-        <div className='relative mt-12 lg:mt-10 lg:flex lg:justify-center lg: lg:items-center'>
+        <div className='relative mt-12 lg:mt-0 lg:flex lg:justify-center lg: lg:items-center min-h-[429px]'>
           <div className='pl-10 ml-10 w-full mx-auto relative lg:w-1/2'>
             <h3 className='text-[22px] font-extrabold text-[#11324d] leading-[25px] tracking-tight'>
               Value Added Services
@@ -109,7 +103,7 @@ export default function Features() {
             aria-hidden='true'
           >
             <Transition.Root
-              // appear={move}
+              appear={true}
               show={move2}
               enter='transition transform duration-[2000ms]'
               enterFrom='translate-x-10 opacity-0'
@@ -126,13 +120,13 @@ export default function Features() {
             </Transition.Root>
           </div>
         </div>
-        <div className='relative mt-12 lg:mt-10 lg:flex lg:justify-center lg: lg:items-center'>
+        <div className='relative mt-12 lg:mt-0 lg:flex lg:justify-center lg: lg:items-center min-h-[429px] '>
           <div
-            className='hidden mt-1 -ml-16 mr-24 relative lg:mt-0 w-1/2 lg:block mb-10'
+            className='hidden mt-1 -ml-16 mr-24 relative lg:mt-0 w-1/2 lg:block mb-0'
             aria-hidden='true'
           >
             <Transition.Root
-              // appear={move}
+              appear={true}
               show={move3}
               enter='transition transform duration-[2000ms]'
               enterFrom='-translate-x-12 opacity-0'
