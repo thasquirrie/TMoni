@@ -16,8 +16,9 @@
   ```
 */
 import { Fragment, useState } from 'react';
-import { Dialog, Popover, Tab, Transition } from '@headlessui/react';
+import { Dialog, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import { Link } from 'react-router-dom';
 
 const navigation = {
   pages: [
@@ -27,11 +28,7 @@ const navigation = {
   ],
 };
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
-
-export default function Example() {
+export default function FirstHeader() {
   const [open, setOpen] = useState(false);
 
   return (
@@ -91,61 +88,22 @@ export default function Example() {
 
               <div className='border-t border-gray-200 py-6 px-4 space-y-6'>
                 <div className='flow-root'>
-                  <a
-                    href='#'
+                  <Link
+                    to='#'
                     className='-m-2 p-2 block font-medium text-gray-900'
                   >
                     Log in
-                  </a>
+                  </Link>
                 </div>
                 <div className='flow-root'>
-                  <a
-                    href='#'
+                  <Link
+                    to='#'
                     className='-m-2 p-2 block font-medium text-gray-900'
                   >
                     Signup
-                  </a>
+                  </Link>
                 </div>
               </div>
-
-              {/* <div className='border-t border-gray-200 py-6 px-4 space-y-6'> */}
-              {/* Currency selector */}
-              {/* <form>
-                  <div className='inline-block'>
-                    <label htmlFor='mobile-currency' className='sr-only'>
-                      Currency
-                    </label>
-                    <div className='-ml-2 group relative border-transparent rounded-md focus-within:ring-2 focus-within:ring-white'>
-                      <select
-                        id='mobile-currency'
-                        name='currency'
-                        className='bg-none border-transparent rounded-md py-0.5 pl-2 pr-5 flex items-center text-sm font-medium text-gray-700 group-hover:text-gray-800 focus:outline-none focus:ring-0 focus:border-transparent'
-                      >
-                        {currencies.map((currency) => (
-                          <option key={currency}>{currency}</option>
-                        ))}
-                      </select>
-                      <div className='absolute right-0 inset-y-0 flex items-center pointer-events-none'>
-                        <svg
-                          aria-hidden='true'
-                          xmlns='http://www.w3.org/2000/svg'
-                          fill='none'
-                          viewBox='0 0 20 20'
-                          className='w-5 h-5 text-gray-500'
-                        >
-                          <path
-                            stroke='currentColor'
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                            strokeWidth='1.5'
-                            d='M6 8l4 4 4-4'
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div> */}
             </div>
           </Transition.Child>
         </Dialog>
@@ -153,63 +111,6 @@ export default function Example() {
 
       <header className='relative'>
         <nav aria-label='Top'>
-          {/* Top navigation */}
-          {/* <div className='bg-gray-900'>
-            <div className='max-w-7xl mx-auto h-10 px-4 flex items-center justify-between sm:px-6 lg:px-8'> */}
-          {/* Currency selector */}
-          {/* <form>
-                <div>
-                  <label htmlFor='desktop-currency' className='sr-only'>
-                    Currency
-                  </label>
-                  <div className='-ml-2 group relative bg-gray-900 border-transparent rounded-md focus-within:ring-2 focus-within:ring-white'>
-                    <select
-                      id='desktop-currency'
-                      name='currency'
-                      className='bg-none bg-gray-900 border-transparent rounded-md py-0.5 pl-2 pr-5 flex items-center text-sm font-medium text-white group-hover:text-gray-100 focus:outline-none focus:ring-0 focus:border-transparent'
-                    >
-                      {currencies.map((currency) => (
-                        <option key={currency}>{currency}</option>
-                      ))}
-                    </select>
-                    <div className='absolute right-0 inset-y-0 flex items-center pointer-events-none'>
-                      <svg
-                        aria-hidden='true'
-                        xmlns='http://www.w3.org/2000/svg'
-                        fill='none'
-                        viewBox='0 0 20 20'
-                        className='w-5 h-5 text-gray-300'
-                      >
-                        <path
-                          stroke='currentColor'
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          strokeWidth='1.5'
-                          d='M6 8l4 4 4-4'
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </form>
-
-              <div className='flex items-center space-x-6'>
-                <a
-                  href='#'
-                  className='text-sm font-medium text-white hover:text-gray-100'
-                >
-                  Sign in
-                </a>
-                <a
-                  href='#'
-                  className='text-sm font-medium text-white hover:text-gray-100'
-                >
-                  Create an account
-                </a>
-              </div>
-            </div>
-          </div> */}
-
           {/* Secondary navigation */}
           <div className='bg-white'>
             <div className=' max-w-[1740px] mx-auto px-4 sm:px-6 lg:px-8'>
@@ -217,56 +118,56 @@ export default function Example() {
                 <div className='h-16 flex items-center justify-between'>
                   {/* Logo (lg+) */}
                   <div className='hidden lg:flex-1 lg:flex lg:items-center'>
-                    <a href='#'>
+                    <Link to='#'>
                       <span className='sr-only'>Workflow</span>
                       <img
                         className='h-8 w-auto'
                         src='./img/TMoni.png'
                         alt=''
                       />
-                    </a>
+                    </Link>
                   </div>
 
                   {/* Mobile menu and search (lg-) */}
 
                   {/* Logo (lg-) */}
-                  <a href='#' className='lg:hidden'>
+                  <Link to='#' className='lg:hidden'>
                     <span className='sr-only'>Workflow</span>
                     <img src='./img/TMoni.png' alt='' className='h-8 w-auto' />
-                  </a>
+                  </Link>
 
                   <div className='flex-1 flex items-center justify-end'>
                     <div className='flex items-center lg:ml-8'>
-                      <a
-                        href='/about'
-                        className=' text-[#0a3926] mr-[25px] hidden text-[17px] font-semibold text-gray-700 hover:text-gray-800 lg:block'
+                      <Link
+                        to='/about'
+                        className=' text-[#0a3926] mr-[25px] hidden text-[17px] font-semibold  hover:text-gray-800 lg:block'
                       >
                         About
-                      </a>
-                      <a
-                        href='/faq'
-                        className='text-[#0a3926] mr-[25px] hidden text-[17px] font-semibold text-gray-700 hover:text-gray-800 lg:block'
+                      </Link>
+                      <Link
+                        to='/faq'
+                        className='text-[#0a3926] mr-[25px] hidden text-[17px] font-semibold  hover:text-gray-800 lg:block'
                       >
                         FAQ
-                      </a>
-                      <a
-                        href='/contact'
-                        className='text-[#0a3926] mr-[25px] hidden text-[17px] font-semibold text-gray-700 hover:text-gray-800 lg:block'
+                      </Link>
+                      <Link
+                        to='/contact'
+                        className='text-[#0a3926] mr-[25px] hidden text-[17px] font-semibold  hover:text-gray-800 lg:block'
                       >
                         Contact
-                      </a>
-                      <a
-                        href='/login'
-                        className='text-[#0a3926] mr-[25px] hidden text-[17px] font-semibold text-gray-700 hover:text-gray-800 lg:block'
+                      </Link>
+                      <Link
+                        to='/login'
+                        className='text-[#0a3926] mr-[25px] hidden text-[17px] font-semibold  hover:text-gray-800 lg:block'
                       >
                         Log in
-                      </a>
-                      <a
-                        href='/signup'
+                      </Link>
+                      <Link
+                        to='/signup'
                         className='mr-[25px] hidden text-[17px] font-semibold text-white lg:block px-10 bg-[#194350] py-1.5 rounded-md '
                       >
                         Signup
-                      </a>
+                      </Link>
                     </div>
 
                     <div className='flex items-center lg:hidden'>

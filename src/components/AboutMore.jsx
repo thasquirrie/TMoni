@@ -10,7 +10,7 @@ export default function Example() {
           alt=''
         />
         <div
-          className='absolute inset-0 bg-[#80e677] mix-blend-multiply'
+          className='absolute inset-0 bg-[#36982d] sm:bg-[#80e677] mix-blend-multiply'
           aria-hidden='true'
         />
       </div>

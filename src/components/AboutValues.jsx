@@ -26,13 +26,12 @@ const supportLinks = [
 
 export default function AboutValues() {
   return (
-    <div className='bg-white'>
+    <div className='bg-gray-300 mx-auto'>
       {/* Header */}
       <div className='relative pb-32 bg-gray-800'>
         <div className='absolute inset-0'>
           <img
             className='w-full h-full object-cover'
-            // src='https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&&sat=-100'
             src='./img/farmers.jpg'
             alt=''
           />
@@ -59,7 +58,7 @@ export default function AboutValues() {
         <h2 className='sr-only' id='contact-heading'>
           Contact us
         </h2>
-        <div className='grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8'>
+        <div className='grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-10'>
           {supportLinks.map((link) => (
             <div
               key={link.name}
@@ -82,7 +81,7 @@ export default function AboutValues() {
               <div className='p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8'>
                 <a
                   href={link.href}
-                  className='text-base font-medium text-[#46bb3c] hover:text-[#69de5e]'
+                  className='text-base font-medium text-[#46bb3c] hover:text-[#7ed876]'
                 >
                   Contact us<span aria-hidden='true'> &rarr;</span>
                 </a>

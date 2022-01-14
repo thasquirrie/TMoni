@@ -1,55 +1,8 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Transition } from '@headlessui/react';
-import {
-  AnnotationIcon,
-  ChevronRightIcon,
-  GlobeAltIcon,
-  LightningBoltIcon,
-  MailIcon,
-  ScaleIcon,
-} from '@heroicons/react/outline';
+import { ChevronRightIcon } from '@heroicons/react/outline';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-
-const transferFeatures = [
-  {
-    id: 1,
-    name: 'Competitive exchange rates',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: GlobeAltIcon,
-  },
-  {
-    id: 2,
-    name: 'No hidden fees',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: ScaleIcon,
-  },
-  {
-    id: 3,
-    name: 'Transfers are instant',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: LightningBoltIcon,
-  },
-];
-const communicationFeatures = [
-  {
-    id: 1,
-    name: 'Mobile notifications',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: AnnotationIcon,
-  },
-  {
-    id: 2,
-    name: 'Reminder emails',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: MailIcon,
-  },
-];
 
 export default function Features() {
   const [move, setMove] = useState(false);
@@ -97,11 +50,11 @@ export default function Features() {
               // appear={true}
               show={move}
               enter='transition transform duration-[2000ms]'
-              enterFrom='-translate-x-12 opacity-0'
+              enterFrom='-translate-x-8 opacity-0'
               enterTo='translation-x-0 opacity-1'
             >
               <img
-                className='relative mx-auto max-w-[390px] h-[429px]'
+                className=' relative mx-auto max-w-[390px] h-[429px]'
                 // width={490}
                 // src='https://tailwindui.com/img/features/feature-example-1.png'
                 src='./img/services-1.png'
