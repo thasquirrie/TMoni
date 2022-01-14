@@ -18,8 +18,6 @@ import { useState } from 'react';
 import { Transition } from '@headlessui/react';
 
 export default function Hero() {
-  const [show, setShow] = useState(false);
-
   // console.log({ show });
   return (
     <div className='font-ubuntu'>
