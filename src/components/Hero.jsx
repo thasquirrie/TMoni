@@ -14,7 +14,6 @@
   }
   ```
 */
-import { useState } from 'react';
 import { Transition } from '@headlessui/react';
 
 export default function Hero() {

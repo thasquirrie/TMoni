@@ -64,7 +64,7 @@ export default function Footer() {
       <h2 id='footer-heading' className='sr-only'>
         Footer
       </h2>
-      <div className='max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8'>
+      <div className='max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:py-10 lg:px-8'>
         <div className='xl:grid xl:grid-cols-3 xl:gap-8'>
           <div className='space-y-8 xl:col-span-1 w-fit mx-auto'>
             <img
@@ -148,7 +148,10 @@ export default function Footer() {
         {/* </div> */}
         <div className='mt-12 border-t border-gray-200 pt-8'>
           <p className='text-base text-gray-400 xl:text-center'>
-            &copy; 2020 Workflow, Inc. All rights reserved.
+            &copy; 2021 TMoni, Inc. All rights reserved.
+          </p>
+          <p className='text-base text-gray-400 lg:text-right'>
+            Made with ❤️ by SquirrieLabs&reg;
           </p>
         </div>
       </div>
