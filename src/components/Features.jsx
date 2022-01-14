@@ -35,7 +35,7 @@ export default function Features() {
   return (
     <div className='py-8  overflow-hidden lg:py-2'>
       <div className='relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl'>
-        <div className='relative mt-12 lg:mt-0 lg:flex lg:justify-center lg: lg:items-center min-h-[429px]'>
+        <div className='relative mt-12 lg:mt-0 mx-auto lg:flex lg:justify-center lg: lg:items-center lg:min-h-[429px]'>
           <div
             className='hidden mt-1 -ml-12 mr-16 relative lg:mt-0 w-1/2 lg:block'
             aria-hidden='true'
@@ -78,8 +78,8 @@ export default function Features() {
           </div>
         </div>
 
-        <div className='relative mt-12 lg:mt-0 lg:flex lg:justify-center lg: lg:items-center min-h-[429px]'>
-          <div className='pl-10 ml-10 w-full mx-auto relative lg:w-1/2'>
+        <div className='relative mt-12 lg:mt-0 lg:flex lg:justify-center lg: lg:items-center lg:min-h-[429px]'>
+          <div className='pl-10 w-full mx-auto relative lg:w-1/2'>
             <h3 className='text-[22px] font-extrabold text-[#11324d] leading-[25px] tracking-tight'>
               Value Added Services
             </h3>
@@ -120,7 +120,7 @@ export default function Features() {
             </Transition.Root>
           </div>
         </div>
-        <div className='relative mt-12 lg:mt-0 lg:flex lg:justify-center lg: lg:items-center min-h-[429px] '>
+        <div className='relative mt-12 lg:mt-0 lg:flex lg:justify-center lg: lg:items-center lg:min-h-[429px] '>
           <div
             className='hidden mt-1 -ml-16 mr-24 relative lg:mt-0 w-1/2 lg:block mb-0'
             aria-hidden='true'
